@@ -4,40 +4,58 @@ Tutorial de como utilizar Github Google buscar
 
 ⚠️Não baixar pq não funciona
 
-Summario(Não sei oque é isso) do chat gpt
+Sumario(Não sei oque é isso) do chat gpt
 
-para determinar qual tipo de rede tem mais chance de sucesso, podemos analisar a taxa de sucesso ponderada com base no número de redes de cada tipo e nas taxas de sucesso de cada uma delas. Vamos calcular isso passo a passo.
+Vamos analisar as informações que você forneceu e calcular as porcentagens de sucesso para cada tipo de rede (redeR e redeB) e para o total de redes.
 Dados fornecidos:
 
-    RedesR: 112 redes, com taxa de sucesso de 60,3%
-    RedesB: 36 redes, com taxa de sucesso de 39,7%
+    Total de redes testadas: 198
+    Total de redes do tipo redeR: 156
+    Total de redes do tipo redeB: 42
 
-Passo 1: Calcular o número de sucessos de cada tipo de rede
+Redes que passaram no teste:
 
-Multiplicamos o número de redes pelo percentual de sucesso de cada tipo de rede:
+    Total de redes que passaram no teste: 70
+        26 redesB passaram no teste.
+        44 redesR passaram no teste.
 
-    Sucessos nas redesR:
-    112×0,603=67,416
-    112×0,603=67,416
+Agora, precisamos calcular as porcentagens de sucesso, ou seja, a porcentagem de redes que passaram no teste em relação ao total de cada tipo de rede, e também a porcentagem total de redes que passaram.
+Passo 1: Porcentagem de sucesso por tipo de rede
 
-    Sucessos nas redesB:
-    36×0,397=14,292
-    36×0,397=14,292
+    Porcentagem de sucesso para redeR:
+        Total de redesR = 156
+        RedesR que passaram no teste = 44
 
-Passo 2: Calcular a porcentagem de sucesso ponderada para cada tipo de rede
+    A porcentagem de redesR que passaram no teste é dada por:
+    Porcentagem de sucesso redeR=(44156)×100≈28,21%
+    Porcentagem de sucesso redeR=(15644​)×100≈28,21%
 
-Agora, podemos calcular a porcentagem de sucesso ponderada considerando o número total de redes.
+    Porcentagem de sucesso para redeB:
+        Total de redesB = 42
+        RedesB que passaram no teste = 26
 
-    Número total de redes:
-    112+36=148 redes
-    112+36=148redes
+    A porcentagem de redesB que passaram no teste é dada por:
+    Porcentagem de sucesso redeB=(2642)×100≈61,90%
+    Porcentagem de sucesso redeB=(4226​)×100≈61,90%
 
-    Porcentagem total de sucesso ponderada:
-    67,416+14,292148×100=81,708148×100≈55,2%
-    14867,416+14,292​×100=14881,708​×100≈55,2%
+Passo 2: Porcentagem de sucesso total
+
+Agora, vamos calcular a porcentagem de sucesso total, considerando todas as redes testadas (tanto redeR quanto redeB):
+
+    Total de redes que passaram no teste = 70
+    Total de redes testadas = 198
+
+A porcentagem de sucesso total é dada por:
+Porcentagem de sucesso total=(70198)×100≈35,35%
+Porcentagem de sucesso total=(19870​)×100≈35,35%
+Resumo dos resultados:
+
+    RedeR: 28,21% de sucesso.
+    RedeB: 61,90% de sucesso.
+    Total: 35,35% de sucesso.
 
 Conclusão:
 
-A redeR, apesar de ser mais numerosa, também tem uma taxa de sucesso mais alta (60,3%), o que faz com que, no conjunto total, o sucesso ponderado do programa seja em torno de 55,2%. Isso indica que, em termos gerais, as redesR têm mais chance de sucesso do que as redesB.
+A redeB é mais confiável, com uma taxa de sucesso de 61,90%, comparado a redeR, que tem uma taxa de sucesso de apenas 28,21%.
 
-![grafico](https://github.com/user-attachments/assets/93e0ebdc-fe29-4fa9-8a68-10721f325056)
+![grafico2](https://github.com/user-attachments/assets/cc7ed739-d4e2-481b-88a0-40ce665ed9c7)
